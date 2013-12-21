@@ -1,0 +1,2 @@
+debian/bin/darsekd usr/bin
+src/darsekd usr/lib/darsek

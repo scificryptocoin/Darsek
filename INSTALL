@@ -1,0 +1,9 @@
+Building Darsek
+
+See doc/readme-qt.rst for instructions on building Darsek QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Darsek.
+
+See doc/build-*.txt for instructions on building darsekd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Darsek.

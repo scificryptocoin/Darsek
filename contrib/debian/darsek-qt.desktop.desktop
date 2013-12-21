@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Darsek
+Comment=Darsek P2P Cryptocurrency
+Exec=/usr/bin/darsek-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/darsek;
+Categories=Office;
+Name[en_US]=darsek-qt.desktop
