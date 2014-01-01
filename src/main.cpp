@@ -2943,7 +2943,7 @@ string GetWarnings(string strFor)
     // * Should not enter safe mode for longer invalid chain
     // * If sync-checkpoint is too old do not enter safe mode
     // * Display warning only in the STRICT mode
-    if (CheckpointsMode == Checkpoints::STRICT && Checkpoints::IsSyncCheckpointTooOld(60 * 60 * 24 * 10) &&
+    if (CheckpointsMode == Checkpoints::STRICT && Checkpoints::IsSyncCheckpointTooOld(60 * 60 * 24 * 60) &&
         !fTestNet && !IsInitialBlockDownload())
     {
         nPriority = 100;
