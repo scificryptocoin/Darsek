@@ -1,4 +1,3 @@
-
 Darsek official development tree
 
 Darsek - a hybrid scrypt PoW + PoS based cryptocurrency.
@@ -9,7 +8,7 @@ Darsek - a hybrid scrypt PoW + PoS based cryptocurrency.
 * 3.5 KED PoW subsidy 
 * The PoS interest halves every x64 multiply of PoS difficulty
 * Maximum PoS reward is 10 coins
-* ~ 2 billion total coins
+* ~ 500 Million total coins
 
 Development process
 ===========================
