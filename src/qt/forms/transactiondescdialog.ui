@@ -14,7 +14,8 @@
    <string>Transaction details</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 0, 0);</string>
+   <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(234, 135, 22);</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -25,9 +26,9 @@
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>202</red>
-           <green>117</green>
-           <blue>19</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
@@ -61,18 +62,18 @@
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>202</red>
-           <green>117</green>
-           <blue>19</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>202</red>
-           <green>117</green>
-           <blue>19</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
@@ -126,9 +127,9 @@
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>202</red>
-           <green>117</green>
-           <blue>19</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
@@ -162,18 +163,18 @@
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>202</red>
-           <green>117</green>
-           <blue>19</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>202</red>
-           <green>117</green>
-           <blue>19</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
@@ -227,9 +228,9 @@
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>202</red>
-           <green>117</green>
-           <blue>19</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
@@ -263,18 +264,18 @@
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>202</red>
-           <green>117</green>
-           <blue>19</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>202</red>
-           <green>117</green>
-           <blue>19</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
@@ -329,9 +330,6 @@
      <property name="toolTip">
       <string>This pane shows a detailed description of the transaction</string>
      </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(:/images/back);</string>
-     </property>
      <property name="readOnly">
       <bool>true</bool>
      </property>
@@ -345,18 +343,18 @@
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -390,18 +388,18 @@
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
@@ -455,18 +453,18 @@
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -500,18 +498,18 @@
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
@@ -565,18 +563,18 @@
         <colorrole role="WindowText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="Button">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
           </color>
          </brush>
         </colorrole>
@@ -610,18 +608,18 @@
         <colorrole role="Text">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
         <colorrole role="ButtonText">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
-           <red>255</red>
-           <green>255</green>
-           <blue>255</blue>
+           <red>234</red>
+           <green>135</green>
+           <blue>22</blue>
           </color>
          </brush>
         </colorrole>
@@ -683,9 +681,7 @@
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="../bitcoin.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>buttonBox</sender>
