@@ -81,7 +81,7 @@ const string strMessageMagic = "Darsek Signed Message:\n";
 int64 nTransactionFee = MIN_TX_FEE;
 int64 nMinimumInputValue = MIN_TX_FEE;
 
-bool fStakeUsePooledKeys = false;
+
 extern enum Checkpoints::CPMode CheckpointsMode;
 
 //////////////////////////////////////////////////////////////////////////////

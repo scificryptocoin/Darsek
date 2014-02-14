@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/icons">
+    <file>res/images/back.jpg</file>
     <file alias="bitcoin">res/icons/darsek-128.png</file>
     <file alias="address-book">res/icons/address-book.png</file>
     <file alias="quit">res/icons/quit.png</file>
@@ -43,18 +44,15 @@
   </qresource>
   <qresource prefix="/images">
     <file>res/images/barcode.png</file>
-    <file alias="back">res/images/back.png</file>
     <file alias="proverb">res/images/proverb.png</file>
     <file alias="wallet_bgcoin">res/images/wallet_bgcoin.png</file>
+    <file>res/images/back.jpg</file>
     <file alias="about">res/images/about.png</file>
     <file alias="splash">res/images/splash2.jpg</file>
   </qresource>
-  <qresource prefix="fonts">
-    <file>res/fonts/BEK_____.TTF</file>
-    <file>res/fonts/KLTNG___.TTF</file>
-    <file>res/fonts/TREK2.TTF</file>
-  </qresource>
+  <qresource prefix="fonts"/>
   <qresource prefix="/movies">
+    <file>res/images/panel.gif</file>
     <file alias="update_spinner">res/movies/update_spinner.mng</file>
   </qresource>
   <qresource prefix="/translations">

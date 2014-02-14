@@ -13,6 +13,11 @@
   <property name="windowTitle">
    <string>Options</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(202, 117, 19);
+background-color: rgb(0, 0, 0);
+</string>
+  </property>
   <property name="modal">
    <bool>true</bool>
   </property>
@@ -23,7 +28,7 @@
       <enum>QTabWidget::North</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="tabMain">
       <attribute name="title">
@@ -59,7 +64,12 @@
           </widget>
          </item>
          <item>
-          <widget class="BitcoinAmountField" name="transactionFee"/>
+          <widget class="BitcoinAmountField" name="transactionFee">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(170, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
          </item>
          <item>
           <spacer name="horizontalSpacer_Main">
@@ -162,6 +172,10 @@
            <property name="toolTip">
             <string>IP address of the proxy (e.g. 127.0.0.1)</string>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(170, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+           </property>
           </widget>
          </item>
          <item>
@@ -188,6 +202,10 @@
            <property name="toolTip">
             <string>Port of the proxy (e.g. 9050)</string>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(170, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+           </property>
           </widget>
          </item>
          <item>
@@ -207,6 +225,10 @@
           <widget class="QValueComboBox" name="socksVersion">
            <property name="toolTip">
             <string>SOCKS version of the proxy (e.g. 5)</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(170, 0, 0);
+background-color: rgb(255, 255, 255);</string>
            </property>
           </widget>
          </item>
@@ -305,6 +327,10 @@
            <property name="toolTip">
             <string>The user interface language can be set here. This setting will take effect after restarting Darsek.</string>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(170, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+           </property>
           </widget>
          </item>
         </layout>
@@ -328,6 +354,10 @@
           <widget class="QValueComboBox" name="unit">
            <property name="toolTip">
             <string>Choose the default subdivision unit to show in the interface and when sending coins.</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(170, 0, 0);
+background-color: rgb(255, 255, 255);</string>
            </property>
           </widget>
          </item>
@@ -419,6 +449,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="okButton">
+       <property name="styleSheet">
+        <string notr="true"> background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 8em;</string>
+       </property>
        <property name="text">
         <string>&amp;OK</string>
        </property>
@@ -426,6 +459,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="cancelButton">
+       <property name="styleSheet">
+        <string notr="true"> background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 8em;</string>
+       </property>
        <property name="text">
         <string>&amp;Cancel</string>
        </property>
@@ -436,6 +472,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="applyButton">
+       <property name="styleSheet">
+        <string notr="true"> background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 8em;</string>
+       </property>
        <property name="text">
         <string>&amp;Apply</string>
        </property>
@@ -450,19 +489,20 @@
  </widget>
  <customwidgets>
   <customwidget>
+   <class>QValidatedLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qvalidatedlineedit.h</header>
+  </customwidget>
+  <customwidget>
    <class>BitcoinAmountField</class>
-   <extends>QSpinBox</extends>
+   <extends>QLineEdit</extends>
    <header>bitcoinamountfield.h</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>QValueComboBox</class>
    <extends>QComboBox</extends>
    <header>qvaluecombobox.h</header>
-  </customwidget>
-  <customwidget>
-   <class>QValidatedLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>qvalidatedlineedit.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

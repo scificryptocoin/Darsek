@@ -32,7 +32,7 @@ std::string strWalletFileName;
 unsigned int nNodeLifespan;
 unsigned int nDerivationMethodIndex;
 enum Checkpoints::CPMode CheckpointsMode;
-
+bool fUseFastIndex;
 //////////////////////////////////////////////////////////////////////////////
 //
 // Shutdown
@@ -250,8 +250,6 @@ std::string HelpMessage()
         "  -bind=<addr>           " + _("Bind to given address. Use [host]:port notation for IPv6") + "\n" +
         "  -dnsseed               " + _("Find peers using DNS lookup (default: 1)") + "\n" +
         "  -cppolicy              " + _("Sync checkpoints policy (default: strict)") + "\n" +
-        "  -stakepooledkeys       " + _("Use pooled pubkeys for the last coinstake output (default: 0)") + "\n" +
-        "  -derivationmethod      " + _("Which key derivation method to use by default (default: sha512)") + "\n" +
         "  -banscore=<n>          " + _("Threshold for disconnecting misbehaving peers (default: 100)") + "\n" +
         "  -bantime=<n>           " + _("Number of seconds to keep misbehaving peers from reconnecting (default: 86400)") + "\n" +
         "  -maxreceivebuffer=<n>  " + _("Maximum per-connection receive buffer, <n>*1000 bytes (default: 5000)") + "\n" +
@@ -360,8 +358,7 @@ bool AppInit2()
     // ********************************************************* Step 2: parameter interactions
 
     nNodeLifespan = GetArg("-addrlifespan", 7);
-    fStakeUsePooledKeys = GetBoolArg("-stakepooledkeys", false);
-
+    fUseFastIndex = GetBoolArg("-fastindex", true);
     CheckpointsMode = Checkpoints::STRICT;
     std::string strCpMode = GetArg("-cppolicy", "strict");
 
@@ -374,8 +371,7 @@ bool AppInit2()
     if(strCpMode == "permissive")
         CheckpointsMode = Checkpoints::PERMISSIVE;
 
-    if(GetArg("-derivationmethod", "sha512") == "scrypt+sha512")
-        nDerivationMethodIndex = 1;
+    nDerivationMethodIndex = 0;
 
     fTestNet = GetBoolArg("-testnet");
     if (fTestNet) {

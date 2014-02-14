@@ -13,7 +13,8 @@ EditAddressDialog::EditAddressDialog(Mode mode, QWidget *parent) :
     ui->setupUi(this);
 
     GUIUtil::setupAddressWidget(ui->addressEdit, this);
-
+    setStyleSheet("QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; \
+                   padding: 6px;}");
     switch(mode)
     {
     case NewReceivingAddress:
@@ -86,24 +87,24 @@ void EditAddressDialog::accept()
     {
         switch(model->getEditStatus())
         {
-        case AddressTableModel::DUPLICATE_ADDRESS:
+         case AddressTableModel::INVALID_ADDRESS:
             QMessageBox::warning(this, windowTitle(),
-                tr("The entered address \"%1\" is already in the address book.").arg(ui->addressEdit->text()),
+                tr("<FONT COLOR=red>The entered address \"%1\" is not a valid Federation Credit address.").arg(ui->addressEdit->text()),
                 QMessageBox::Ok, QMessageBox::Ok);
             break;
-        case AddressTableModel::INVALID_ADDRESS:
+        case AddressTableModel::DUPLICATE_ADDRESS:
             QMessageBox::warning(this, windowTitle(),
-                tr("The entered address \"%1\" is not a valid Darsek address.").arg(ui->addressEdit->text()),
+                tr("<FONT COLOR=red>The entered address \"%1\" is already in the address book.").arg(ui->addressEdit->text()),
                 QMessageBox::Ok, QMessageBox::Ok);
-            return;
+            break;
         case AddressTableModel::WALLET_UNLOCK_FAILURE:
             QMessageBox::critical(this, windowTitle(),
-                tr("Could not unlock wallet."),
+                tr("<FONT COLOR=red>Could not unlock wallet."),
                 QMessageBox::Ok, QMessageBox::Ok);
-            return;
+            break;
         case AddressTableModel::KEY_GENERATION_FAILURE:
             QMessageBox::critical(this, windowTitle(),
-                tr("New key generation failed."),
+                tr("<FONT COLOR=red>New key generation failed."),
                 QMessageBox::Ok, QMessageBox::Ok);
             return;
         case AddressTableModel::OK:

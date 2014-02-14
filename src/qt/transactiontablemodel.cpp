@@ -276,39 +276,38 @@ int TransactionTableModel::columnCount(const QModelIndex &parent) const
 QString TransactionTableModel::formatTxStatus(const TransactionRecord *wtx) const
 {
     QString status;
-
     switch(wtx->status.status)
     {
     case TransactionStatus::OpenUntilBlock:
-        status = tr("Open for %n block(s)","",wtx->status.open_for);
+        status = tr("<FONT COLOR=black>Open for %n more block(s)","",wtx->status.open_for);
         break;
     case TransactionStatus::OpenUntilDate:
-        status = tr("Open until %1").arg(GUIUtil::dateTimeStr(wtx->status.open_for));
+        status = tr("<FONT COLOR=black>Open until %1").arg(GUIUtil::dateTimeStr(wtx->status.open_for));
         break;
     case TransactionStatus::Offline:
-        status = tr("Offline (%1 confirmations)").arg(wtx->status.depth);
+        status = tr("<FONT COLOR=black>Offline (%1 confirmations)").arg(wtx->status.depth);
         break;
     case TransactionStatus::Unconfirmed:
-        status = tr("Unconfirmed (%1 of %2 confirmations)").arg(wtx->status.depth).arg(TransactionRecord::NumConfirmations);
+        status = tr("<FONT COLOR=black>Unconfirmed (%1 of %2 confirmations)").arg(wtx->status.depth).arg(TransactionRecord::NumConfirmations);
         break;
     case TransactionStatus::HaveConfirmations:
-        status = tr("Confirmed (%1 confirmations)").arg(wtx->status.depth);
+        status = tr("<FONT COLOR=black>Confirmed (%1 confirmations)").arg(wtx->status.depth);
         break;
     }
-    if(wtx->type == TransactionRecord::Generated  || wtx->type == TransactionRecord::StakeMint)
+    if(wtx->type == TransactionRecord::Generated)
     {
         switch(wtx->status.maturity)
         {
         case TransactionStatus::Immature:
-            status += "\n" + tr("Mined balance will be available when it matures in %n more block(s)", "", wtx->status.matures_in);
+            status += "\n" + tr("<FONT COLOR=black>Mined balance will be available when it matures in %n more block(s)", "", wtx->status.matures_in);
             break;
         case TransactionStatus::Mature:
             break;
         case TransactionStatus::MaturesWarning:
-            status += "\n" + tr("This block was not received by any other nodes and will probably not be accepted!");
+            status += "\n" + tr("<FONT COLOR=black>This block was not received by any other nodes and will probably not be accepted!");
             break;
         case TransactionStatus::NotAccepted:
-            status += "\n" + tr("Generated but not accepted");
+            status += "\n" + tr("<FONT COLOR=black>Generated but not accepted");
             break;
         }
     }
@@ -462,10 +461,10 @@ QVariant TransactionTableModel::txStatusDecoration(const TransactionRecord *wtx)
         {
         case TransactionStatus::OpenUntilBlock:
         case TransactionStatus::OpenUntilDate:
-            return QColor(64,64,255);
+            return QColor(255,255,255);
             break;
         case TransactionStatus::Offline:
-            return QColor(192,192,192);
+            return QColor(240,240,240);
         case TransactionStatus::Unconfirmed:
             switch(wtx->status.depth)
             {
@@ -480,7 +479,7 @@ QVariant TransactionTableModel::txStatusDecoration(const TransactionRecord *wtx)
             return QIcon(":/icons/transaction_confirmed");
         }
     }
-    return QColor(0,0,0);
+    return QColor(255,255,255);
 }
 
 QString TransactionTableModel::formatTooltip(const TransactionRecord *rec) const

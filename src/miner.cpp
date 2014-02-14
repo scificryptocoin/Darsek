@@ -16,7 +16,7 @@ using namespace std;
 // BitcoinMiner
 //
 
-string strMintMessage = "Info: Minting suspended due to locked wallet.";
+string strMintMessage = "<FONT COLOR = white>Info: Minting suspended due to locked wallet.";
 string strMintWarning;
 
 int static FormatHashBlocks(void* pbuffer, unsigned int len)
