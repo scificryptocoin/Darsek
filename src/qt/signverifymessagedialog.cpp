@@ -24,10 +24,10 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
 
 #if (QT_VERSION >= 0x040700)
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->addressIn_SM->setPlaceholderText(tr("Enter a Darsek address (e.g. C4MaaMNY3yrXzQkHHbE65J9SYpjT5apjrX)"));
+    ui->addressIn_SM->setPlaceholderText(tr("Enter a Darsek address (e.g. DAWtYMfJc1spP6QnLLbJ855DWUomBVchS9)"));
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
 
-    ui->addressIn_VM->setPlaceholderText(tr("Enter a Darsek address (e.g. C4MaaMNY3yrXzQkHHbE65J9SYpjT5apjrX)"));
+    ui->addressIn_VM->setPlaceholderText(tr("Enter a Darsek address (e.g. DAWtYMfJc1spP6QnLLbJ855DWUomBVchS9)"));
     ui->signatureIn_VM->setPlaceholderText(tr("Enter Darsek signature"));
 #endif
 

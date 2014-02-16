@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>700</width>
-    <height>380</height>
+    <height>377</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,8 +22,11 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);</string>
+     </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tabSignMessage">
       <attribute name="title">
@@ -32,6 +35,9 @@
       <layout class="QVBoxLayout" name="verticalLayout_SM">
        <item>
         <widget class="QLabel" name="infoLabel_SM">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 170, 0);</string>
+         </property>
          <property name="text">
           <string>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</string>
          </property>
@@ -51,7 +57,11 @@
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_SM">
            <property name="toolTip">
-            <string>The address to sign the message with (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</string>
+            <string>The address to sign the message with (e.g. DAWtYMfJc1spP6QnLLbJ855DWUomBVchS9)</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);</string>
            </property>
            <property name="maxLength">
             <number>34</number>
@@ -105,6 +115,10 @@
          <property name="toolTip">
           <string>Enter the message you want to sign here</string>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 170, 0);
+background-color: rgb(255, 255, 255);</string>
+         </property>
         </widget>
        </item>
        <item>
@@ -119,6 +133,10 @@
              <italic>true</italic>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+           </property>
            <property name="readOnly">
             <bool>true</bool>
            </property>
@@ -128,6 +146,9 @@
           <widget class="QPushButton" name="copySignatureButton_SM">
            <property name="toolTip">
             <string>Copy the current signature to the system clipboard</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; padding: 6px;}</string>
            </property>
            <property name="text">
             <string/>
@@ -150,6 +171,9 @@
            <property name="toolTip">
             <string>Sign the message to prove you own this Darsek address</string>
            </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; padding: 6px;}</string>
+           </property>
            <property name="text">
             <string>&amp;Sign Message</string>
            </property>
@@ -166,6 +190,9 @@
           <widget class="QPushButton" name="clearButton_SM">
            <property name="toolTip">
             <string>Reset all sign message fields</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; padding: 6px;}</string>
            </property>
            <property name="text">
             <string>Clear &amp;All</string>
@@ -232,6 +259,9 @@
       <layout class="QVBoxLayout" name="verticalLayout_VM">
        <item>
         <widget class="QLabel" name="infoLabel_VM">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 170, 0);</string>
+         </property>
          <property name="text">
           <string>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</string>
          </property>
@@ -254,7 +284,11 @@
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_VM">
            <property name="toolTip">
-            <string>The address the message was signed with (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The address the message was signed with (e.g. DAWtYMfJc1spP6QnLLbJ855DWUomBVchS9)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);</string>
            </property>
            <property name="maxLength">
             <number>34</number>
@@ -284,10 +318,20 @@
         </layout>
        </item>
        <item>
-        <widget class="QPlainTextEdit" name="messageIn_VM"/>
+        <widget class="QPlainTextEdit" name="messageIn_VM">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 170, 0);
+background-color: rgb(255, 255, 255);</string>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QValidatedLineEdit" name="signatureIn_VM"/>
+        <widget class="QValidatedLineEdit" name="signatureIn_VM">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+         </property>
+        </widget>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2_VM">
@@ -295,6 +339,9 @@
           <widget class="QPushButton" name="verifyMessageButton_VM">
            <property name="toolTip">
             <string>Verify the message to ensure it was signed with the specified Darsek address</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; padding: 6px;}</string>
            </property>
            <property name="text">
             <string>&amp;Verify Message</string>
@@ -312,6 +359,9 @@
           <widget class="QPushButton" name="clearButton_VM">
            <property name="toolTip">
             <string>Reset all verify message fields</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; padding: 6px;}</string>
            </property>
            <property name="text">
             <string>Clear &amp;All</string>

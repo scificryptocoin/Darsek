@@ -11,6 +11,7 @@
 const QString AddressTableModel::Send = "S";
 const QString AddressTableModel::Receive = "R";
 
+
 struct AddressTableEntry
 {
     enum Type {
@@ -50,7 +51,6 @@ public:
     CWallet *wallet;
     QList<AddressTableEntry> cachedAddressTable;
     AddressTableModel *parent;
-
     AddressTablePriv(CWallet *wallet, AddressTableModel *parent):
         wallet(wallet), parent(parent) {}
 

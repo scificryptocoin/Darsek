@@ -119,9 +119,9 @@
      <colorrole role="Highlight">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>195</red>
-        <green>195</green>
-        <blue>195</blue>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
        </color>
       </brush>
      </colorrole>
@@ -132,7 +132,11 @@
    <string>Address Book</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">color: red;QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; padding: 6px;}</string>
+   <string notr="true">color: red;
+selection-background-color: rgb(255, 255, 255);
+QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; padding: 6px;}
+
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -167,6 +171,15 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Highlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
        </active>
        <inactive>
         <colorrole role="WindowText">
@@ -196,6 +209,15 @@
           </color>
          </brush>
         </colorrole>
+        <colorrole role="Highlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
        </inactive>
        <disabled>
         <colorrole role="WindowText">
@@ -222,6 +244,15 @@
            <red>202</red>
            <green>117</green>
            <blue>19</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Highlight">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -588,9 +619,9 @@
       <bool>true</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">selection-background-color: rgb(255, 255, 255);
-selection-color: rgb(255, 0, 0);
-color: rgb(202, 117, 19);</string>
+      <string notr="true">selection-color: rgb(255, 0, 0);
+color: rgb(202, 117, 19);
+QTableWidget::item{ selection-background-color: white};</string>
      </property>
      <property name="tabKeyNavigation">
       <bool>false</bool>
@@ -676,9 +707,9 @@ color: rgb(202, 117, 19);</string>
           <colorrole role="Highlight">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>170</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -741,9 +772,9 @@ color: rgb(202, 117, 19);</string>
           <colorrole role="Highlight">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>170</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -806,9 +837,9 @@ color: rgb(202, 117, 19);</string>
           <colorrole role="Highlight">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>195</red>
-             <green>195</green>
-             <blue>195</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -889,6 +920,15 @@ color: rgb(202, 117, 19);</string>
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </active>
          <inactive>
           <colorrole role="WindowText">
@@ -945,6 +985,15 @@ color: rgb(202, 117, 19);</string>
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </inactive>
          <disabled>
           <colorrole role="WindowText">
@@ -998,6 +1047,15 @@ color: rgb(202, 117, 19);</string>
              <red>0</red>
              <green>0</green>
              <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -1078,6 +1136,15 @@ color: rgb(202, 117, 19);</string>
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </active>
          <inactive>
           <colorrole role="WindowText">
@@ -1134,6 +1201,15 @@ color: rgb(202, 117, 19);</string>
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </inactive>
          <disabled>
           <colorrole role="WindowText">
@@ -1187,6 +1263,15 @@ color: rgb(202, 117, 19);</string>
              <red>0</red>
              <green>0</green>
              <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -1264,6 +1349,15 @@ color: rgb(202, 117, 19);</string>
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </active>
          <inactive>
           <colorrole role="WindowText">
@@ -1320,6 +1414,15 @@ color: rgb(202, 117, 19);</string>
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </inactive>
          <disabled>
           <colorrole role="WindowText">
@@ -1373,6 +1476,15 @@ color: rgb(202, 117, 19);</string>
              <red>0</red>
              <green>0</green>
              <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -1456,9 +1568,9 @@ color: rgb(202, 117, 19);</string>
           <colorrole role="Highlight">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>170</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -1521,9 +1633,9 @@ color: rgb(202, 117, 19);</string>
           <colorrole role="Highlight">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>170</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -1586,9 +1698,9 @@ color: rgb(202, 117, 19);</string>
           <colorrole role="Highlight">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>195</red>
-             <green>195</green>
-             <blue>195</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -1669,6 +1781,15 @@ color: rgb(202, 117, 19);</string>
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </active>
          <inactive>
           <colorrole role="WindowText">
@@ -1725,6 +1846,15 @@ color: rgb(202, 117, 19);</string>
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
          </inactive>
          <disabled>
           <colorrole role="WindowText">
@@ -1778,6 +1908,15 @@ color: rgb(202, 117, 19);</string>
              <red>0</red>
              <green>0</green>
              <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Highlight">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -1916,9 +2055,9 @@ color: rgb(202, 117, 19);</string>
           <colorrole role="Highlight">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>170</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -2026,9 +2165,9 @@ color: rgb(202, 117, 19);</string>
           <colorrole role="Highlight">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>170</red>
-             <green>0</green>
-             <blue>0</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -2136,9 +2275,9 @@ color: rgb(202, 117, 19);</string>
           <colorrole role="Highlight">
            <brush brushstyle="SolidPattern">
             <color alpha="255">
-             <red>195</red>
-             <green>195</green>
-             <blue>195</blue>
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
             </color>
            </brush>
           </colorrole>
@@ -2158,7 +2297,7 @@ color: rgb(202, 117, 19);</string>
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">color:rgb(255, 255, 255)QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; padding: 6px;}</string>
+        <string notr="true">QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 5em; padding: 6px;}</string>
        </property>
        <property name="standardButtons">
         <set>QDialogButtonBox::Ok</set>

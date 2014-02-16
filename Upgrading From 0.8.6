@@ -1,0 +1,19 @@
+Version 0.8.8 contains a fix that significantly improves startup time. The fix involves adding a field to the TX database. This makes the version 0.8.6 TX database incompatible with this version.
+
+
+********
+One will need to delete the txleveldb directory from the datadir directory. When client/daemon version 0.8.8 is started up, it will then redownload the blockchain in order to reconstruct the TX database.
+
+If one does not delete the txleveldb directory, version 0.8.8 will not be able to start.
+
+********
+
+
+The datadir is stored:
+
+Linux: ~/.darsek
+
+Windows: C:\Users\<username>\AppData\Roaming\Darsek
+
+ONLY THE TXLEVELDB DIRECTORY NEEDS TO BE DELETED, THE REST OF THE DIRECTORY CAN STAY.
+

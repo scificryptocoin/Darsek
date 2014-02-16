@@ -70,8 +70,9 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 {
     resize(500, 425);
     setWindowTitle(tr("Klingon Darsek") + " - " + tr("Wallet"));
-    setStyleSheet("QWidget { background : #000000;border-radius:10px; }  QToolButton { background : #000000; color: white;border-radius:10px;}QMenu::item {background-color: #000000; color: white;}QMenuBar::item {background-color: #000000; color: #FF0000;}QMessageBox::{background-color: #000000; color: orange;} \
-                     QPushButton { background : #000000 ;border-radius:10px; border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 8em;}QmessageBox::StandardButton{border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 8em;}");
+    setStyleSheet("QWidget { background : #000000;border-radius:10px; }  QToolButton { background : #000000; color: white;border-radius:10px;}QMenu::item {background-color: #222222; color: #FFAA00; padding: 2px 25px 2px 20px; border: 1px solid transparent;}QMenu::item:selected{border-color: red;background:#555555; }\
+                 QMenuBar::item {background-color: #000000; color: #FF0000;}QMessageBox{background-color: #000000; color: orange;} QPushButton {padding: 3px;background : #000000 ;border-radius:10px; border-color: white; color: red;\
+                  border-style: solid; border-width: 2px;font: bold 10px;min-width: 8em;}QmessageBox::StandardButton{border-color: white; color: red;  border-style: solid; border-width: 2px;font: bold 10px;min-width: 8em;}");
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
@@ -259,7 +260,7 @@ void BitcoinGUI::createActions()
     signMessageAction = new QAction(QIcon(":/icons/edit"), tr("Sign &message..."), this);
     verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Verify message..."), this);
 
-    exportAction = new QAction(QIcon(":/icons/export"), tr("&li' tq"), this);
+    exportAction = new QAction(QIcon(":/icons/export"), tr("&Export"), this);
     exportAction->setToolTip(tr("Export the data in the current tab to a file"));
     openRPCConsoleAction = new QAction(QIcon(":/icons/debugwindow"), tr("&Debug window"), this);
     openRPCConsoleAction->setToolTip(tr("Open debugging and diagnostic console"));

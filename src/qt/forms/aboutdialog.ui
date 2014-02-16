@@ -242,7 +242,7 @@ background-color: rgb(0, 0, 0);</string>
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string notr="true">0.3.666-beta</string>
+          <string notr="true"/>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -388,14 +388,15 @@ background-color: rgb(0, 0, 0);</string>
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="autoFillBackground">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);</string>
        </property>
        <property name="text">
-        <string>Copyright © 2013 The Darsek developers
-Copyright © 2013 The Novacoin developers</string>
+        <string>Copyright © 2013 The Novacoin developers
+Copyright © 2013 The Darsek developers
+</string>
        </property>
        <property name="margin">
         <number>4</number>
@@ -411,7 +412,7 @@ Copyright © 2013 The Novacoin developers</string>
      <item>
       <widget class="QLabel" name="label_3">
        <property name="autoFillBackground">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="styleSheet">
         <string notr="true">
@@ -419,7 +420,7 @@ background-color: rgb(0, 0, 0);
 color: rgb(202, 117, 19);</string>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;STAR TREK and all related marks, logos and characters are owned by CBS Studios Inc.\nThis application, the promotion thereof and/or any exhibition of&lt;/p&gt;&lt;p&gt;material in this application are not endorsed or sponsored by or affiliated with CBS/Paramount Pictures or the STAR TREK franchise.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;STAR TREK and all related marks, logos and characters are owned by CBS Studios Inc.This application, the promotion thereof and/or any exhibition of&lt;/p&gt;&lt;p&gt;material in this application are not endorsed or sponsored by or affiliated with CBS/Paramount Pictures or the STAR TREK franchise.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -547,7 +548,7 @@ color: rgb(202, 117, 19);</string>
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="autoFillBackground">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);</string>
@@ -932,7 +933,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         </palette>
        </property>
        <property name="autoFillBackground">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(0, 0, 0);</string>
