@@ -25,7 +25,7 @@ extern const std::string CLIENT_DATE;
 // network protocol versioning
 //
 
-static const int PROTOCOL_VERSION = 70001;
+static const int PROTOCOL_VERSION = 70100;
 
 // earlier versions not supported as of Dec 2013, and are disconnected
 static const int MIN_PROTO_VERSION = 70001;
@@ -36,7 +36,7 @@ static const int CADDR_TIME_VERSION = 70001;
 
 // only request blocks from nodes outside this range of versions
 static const int NOBLKS_VERSION_START = 50000;
-static const int NOBLKS_VERSION_END = 70000;
+static const int NOBLKS_VERSION_END = 70099;
 
 // BIP 0031, pong message, is enabled for all versions AFTER this one
 static const int BIP0031_VERSION = 70001;
@@ -46,7 +46,7 @@ static const int MEMPOOL_GD_VERSION = 70001;
 
 #define DISPLAY_VERSION_MAJOR       0
 #define DISPLAY_VERSION_MINOR       9
-#define DISPLAY_VERSION_REVISION    0
+#define DISPLAY_VERSION_REVISION    2
 #define DISPLAY_VERSION_BUILD       0
 
 #endif
